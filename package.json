@@ -1,0 +1,39 @@
+{
+  "name": "ReactJsNodePostingPictureApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-concurrent": "^2.3.0",
+    "grunt-contrib-stylus": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-node-inspector": "^0.4.2",
+    "grunt-nodemon": "^0.4.2",
+    "load-grunt-tasks": "^3.5.0",
+    "reactify": "^1.1.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "director": "^1.2.8",
+    "express": "^4.13.4",
+    "handlebars": "^4.0.5",
+    "http-proxy": "^1.13.3",
+    "jquery-browserify": "^1.8.1",
+    "node-jsx": "^0.13.3",
+    "react": "^15.1.0",
+    "superagent": "^2.0.0",
+    "underscore": "^1.8.3"
+  },
+  "browser": {
+    "./app/router/renderer/index.js": "./app/router/renderer/client.js"
+  }
+}
